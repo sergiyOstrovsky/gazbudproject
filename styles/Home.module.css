@@ -51,14 +51,14 @@
 
 .frontSection {
   width: 100%;
-  margin-top: 100px;
+  height: 70vh;
+  margin-top: 160px;
   position: relative;
-  height: calc(100vh - 200px);
 }
 
 .frontImage {
   width: 100%;
-  height: calc(100vh - 200px);
+  height: 70vh;
 }
 
 .frontTitle {
@@ -87,7 +87,7 @@
   width: 47%;
   margin-top: 50px;
   border-radius: 8px;
-  height: 'max-content';
+  height: max-content;
   border: 1px solid black;
 }
 
@@ -163,7 +163,7 @@
 
 @media (max-width: 750px) {
   .mainWrapper {
-    padding: 30px;
+    padding: 20px;
   }
 
   .header {
@@ -183,7 +183,17 @@
 
   .header {
     padding: 20px;
+    position: static;
     height: max-content;
+  }
+
+  .frontSection {
+    height: 50vh;
+    margin-top: 0;
+  }
+
+  .frontImage {
+    height: 50vh;
   }
 
   .footer {
@@ -194,6 +204,10 @@
   .headerContent {
     height: max-content;
     flex-direction: column;
+  }
+
+  .activityWrapper {
+    margin-top: 20px;
   }
 
   .contacts {
