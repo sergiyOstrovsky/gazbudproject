@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ypvx8efhrnn6/public_html/
-    - /bin/cp out/index.html $DEPLOYPATH
+    - /bin/cp .next/server/pages/index.js $DEPLOYPATH
