@@ -149,6 +149,7 @@ export default function Home() {
       <Head>
         <title>Укргазбудпроект</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="j-9CrH-_vN5HY-u4yki83x243toKjNtNg2r6TDuDmKg" />
       </Head>
       <header className={styles.header}>
         <div className={styles.headerContent}>
