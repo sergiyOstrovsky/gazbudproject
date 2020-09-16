@@ -138,11 +138,26 @@
   align-items: center;
 }
 
+.sliderItem {
+  padding: 0 20px;
+}
+
+.certificatesTitle {
+  font-size: 40px;
+  color: #050582;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .contactPhone {
   padding: 5px;
   display: flex;
   color: #008adc;
   align-items: center;
+}
+
+.certificatesSection {
+  margin-top: 50px;
 }
 
 @media (max-width: 1400px) {
@@ -163,7 +178,7 @@
 
 @media (max-width: 750px) {
   .mainWrapper {
-    padding: 20px;
+    padding: 30px;
   }
 
   .header {
@@ -230,6 +245,11 @@
 
   .companyActivityTitle {
     font-size: 30px;
+  }
+
+  .certificatesTitle {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .activityHeader {

@@ -1,5 +1,53 @@
 import Head from 'next/head';
+import Slider from 'react-slick';
 import styles from '../styles/Home.module.css';
+
+export const priceSettings = {
+  speed: 500,
+  dots: true,
+  swipe: false,
+  arrows: true,
+  infinite: true,
+  initialSlide: 0,
+  slidesToShow: 3,
+  centerPadding: '50px',
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        swipe: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        swipe: true,
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        swipe: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+};
+
+const certificates = [
+  './1.png',
+  './2.png',
+  './3.png',
+  './4.png',
+  './5.png',
+];
 
 const Logo = () => (
   <div className={styles.logoWrapper}>
@@ -205,6 +253,18 @@ export default function Home() {
           <ActivitySection
             activityName='ecological'
             activityTitle='Послуги екологічного характеру' />
+        </div>
+        <div className={styles.certificatesSection}>
+          <h2 className={styles.certificatesTitle}>
+            Сертифікати
+          </h2>
+          <Slider {...priceSettings}>
+            {certificates.map((item, index) => (
+              <section key={index} className={styles.sliderItem}>
+                <img src={item} width='100%' height='100%' />
+              </section>
+            ))}
+          </Slider>
         </div>
       </main>
       <footer className={styles.footer}>
